@@ -7,19 +7,23 @@
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.js"></script>
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <style>
             .card{
                 margin-right: 2px;
                 margin-bottom: 2px;
-                width: 20rem;
-                float: left;              
+                width: 18rem;
+                float: left;
+            }
+            .card-img{
+                text-align: center;                
             }
             .card-body{
-                text-align: justify;
-                text-align: left;
+                text-align: left;                               
             }
             .card-img-top{
-                width: 150px;                
+                width: 150px;
             }
             .btn-card{
                 text-align: center;
@@ -29,10 +33,11 @@
     <body>
         <div class="container">
             <!--===================================================================================-->
-            <div class="row">
+            <div class="row">               
                 <div class="col">
                     <nav class="navbar navbar-expand-lg navbar-light" style=" background-color: #444444;">
-                        <a class="navbar-brand" href="AppleStore.html" style="color: whitesmoke">Home</a>
+                        <a class="navbar-brand" href="AppleStore.html" style="color: whitesmoke">
+                            <i style="color: #F2F2F2" class="fa fa-apple" aria-hidden="true"></i> Home</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -41,8 +46,7 @@
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: whitesmoke">
-                                        Manuais
-                                    </a>                                   
+                                        <i class="fa fa-bars" aria-hidden="true"></i> Manuais</a>                                   
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" href="#">iPhone</a>
                                         <a class="dropdown-item" href="#">Macbook</a>
@@ -56,8 +60,7 @@
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: whitesmoke">
-                                        Especificações Técnicas
-                                    </a>
+                                        <i class="fa fa-bars" aria-hidden="true"></i> Especificações Técnicas</a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <a class="dropdown-item" href="#">iPhone</a>
                                         <a class="dropdown-item" href="#">Macbook</a>
@@ -69,21 +72,19 @@
                                         <a class="dropdown-item" href="#">Acessórios</a> 
                                     </div>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" style="color: whitesmoke">Suporte</a>
+                                <li class="nav-item"><a class="nav-link" href="#" style="color: whitesmoke">Suporte</a>
                                 </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" style="color: whitesmoke">Login</a>
+                                <li class="nav-item"><a class="nav-link" href="Cadastro.html" style="color: whitesmoke"> 
+                                        <i class="fa fa-user" aria-hidden="true"></i> Login</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" style="color: whitesmoke">Carrinho</a>
+                                <li class="nav-item"><a class="nav-link" href="CarrinhoDeCompras.html" style="color: whitesmoke"> 
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Carrinho</a>
                                 </li>
-
                             </ul>
                             <form class="form-inline my-2 my-lg-0">
                                 <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: whitesmoke">Pesquisar</button>
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: whitesmoke">
+                                    <i class="fa fa-search" aria-hidden="true"></i> Pesquisar</button>
                             </form>
                         </div>
                     </nav>
@@ -108,13 +109,15 @@
                 <div class="col-10">
                     <h4>Black Friday iCrazy</h4>
                     <div class="card">
-                        <img class="card-img-top" src="imagem/imac.jpg">
+                        <div class="card-img">
+                            <img class="card-img-top" src="imagem/imac.jpg">
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">iMac de 21,5 polegadas</h5>
+                            <h5 class="card-title">iMac</h5>
                             <p class="card-text">
-                            <li>Tela de 21,5 polegadas (na diagonal) retroiluminada por LED</li>
-                            <li>Processador Intel Core i5 dual core de 2,3 GHz Turbo Boost de até 3,6 GHz</li>
-                            <li>HD 1 TB a 5400 rpm, Fusion Drive de 1 TB ou SSD de 256 GB²</li>                                
+                            <li>Tela de 21,5 polegadas</li>
+                            <li>Processador Intel® Core™ i5</li>
+                            <li>HD 1 TB a 5400 rpm</li>                                
                             </p>
                             <h5>R$ 899,00</h5>
                             <hr>
@@ -125,14 +128,15 @@
                         </div>
                     </div>                    
                     <div class="card">
-                        <img class="card-img-top"  src="imagem/iphone8black.jpg">
+                        <div class="card-img">
+                            <img class="card-img-top"  src="imagem/iphone8black.jpg">
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">iPhone 8 Plus Cinza Espacial</h5>
+                            <h5 class="card-title">iPhone 8 Plus</h5>
                             <p class="card-text">
                             <li>Tela de 5,5”</li>
                             <li>4G</li>
-                            <li>256 GB</li>
-                            <li>Resitente a água, respingos e poeiras¹</li>
+                            <li>256 GB</li>                            
                             </p>
                             <h5>R$ 999,00</h5>
                             <hr>
@@ -142,33 +146,18 @@
                             </div>
                         </div>
                     </div>                    
-                    <div class="card" style="width: 20rem; height: 35rem; float: left">
-                        <img class="card-img-top" src="imagem/iphone.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">iMac de 21,5 polegadas</h5>
-                            <p class="card-text">
-                            <li></li>
-                            <li></li>
-                            <li></li>                                                      
-                            </p>
-                            <h5>R$ 899,00</h5>
-                            <hr>
-                            <div class="btn-card">
-                                <a href="iehieh.html" class="btn btn-primary">Comprar</a>                           
-                                <a href="Produto.html" class="btn btn-primary">Saiba mais</a>
-                            </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="card-img-top"src="imagem/Apple TV.jpg">                        
                         </div>
-                    </div>                    
-                    <div class="card" style="width: 20rem; height: 35rem; float: left">
-                        <img class="card-img-top" src="imagem/macbook.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">iMac de 21,5 polegadas</h5>
+                            <h5 class="card-title">Apple TV</h5>
                             <p class="card-text">
-                            <li></li>
-                            <li></li>
-                            <li></li>                                
+                            <li>4ª Geração</li>
+                            <li>TV's HD e UHD</li>
+                            <li>Bluetooth 4</li>                                                      
                             </p>
-                            <h5>R$ 499,00</h5>
+                            <h5>R$ 199,00</h5>
                             <hr>
                             <div class="btn-card">
                                 <a href="iehieh.html" class="btn btn-primary">Comprar</a>                           
@@ -177,32 +166,55 @@
                         </div>
                     </div>                    
                     <div class="card">
-                        <img class="card-img-top"  src="imagem/ipadgray.jpg" alt="Card image cap">
+                        <div class="card-img">
+                            <img class="card-img-top" src="imagem/macbook.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">MacBook Air</h5>
+                            <p class="card-text">
+                            <li>Tela de 13,3"</li>
+                            <li>Processador Intel® Core™ i5</li>
+                            <li>Memória 8GB, HD 128GB</li>                                
+                            </p>
+                            <h5>R$ 799,00</h5>
+                            <hr>
+                            <div class="btn-card">
+                                <a href="iehieh.html" class="btn btn-primary">Comprar</a>                           
+                                <a href="Produto.html" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="card-img-top" src="imagem/ipadgray.jpg">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">iPad</h5>
                             <p class="card-text">
-                            <li></li>
-                            <li></li>
-                            <li></li>                            
+                            <li>Tela de 9,7”</li>
+                            <li>Processador A9X</li>
+                            <li>Wi-Fi, Memória 32 GB</li>                            
                             </p>
-                            <h5>R$ 999,00</h5>
+                            <h5>R$ 599,00</h5>
                             <hr>
                             <div class="btn-card">
                                 <a href="iehieh.html" class="btn btn-primary">Comprar</a>                           
                                 <a href="Produto.html" class="btn btn-primary">Saiba mais</a>
-                            </div>
+                            </div>                            
                         </div>
                     </div>                    
                     <div class="card">
-                        <img class="card-img-top"  src="imagem/watch.jpg" alt="Card image cap">
+                        <div class="card-img">
+                            <img class="card-img-top"  src="imagem/watch.jpg" alt="Card image cap">
+                        </div>                        
                         <div class="card-body">
                             <h5 class="card-title">Apple Watch</h5>
                             <p class="card-text">
-                            <li></li>
-                            <li></li>
-                            <li></li>                    
+                            <li>Serie 3 Cinza Espacial</li>
+                            <li>Pulseira Esportiva Preta</li>
+                            <li>Wi-Fi, Bluetooth e 8 GB</li>                    
                             </p>
-                            <h5>R$ 2.099,00</h5>
+                            <h5>R$ 299,00</h5>
                             <hr>
                             <div class="btn-card">
                                 <a href="iehieh.html" class="btn btn-primary">Comprar</a>                           
@@ -215,20 +227,44 @@
             <hr>
 
             <!--===================================================================================-->
-            <div class="row">
+            <div class="row" style="text-align: center">
                 <div class="col">
-                    <h4>Departamentos</h4>
+                    <h6>Departamentos</h6>
+                    <p style="font-size: 12px">DeskTops</br>NoteBooks</br>Acessórios</br>Smartphones</p>
                 </div>
                 <div class="col">
-                    <h4>Minha Conta</h4>
-                    <a href="#" class="btn btn-primary">Login</a>
+                    <h6>Redes Sociais</h6>
+                    <div style="text-align: center">
+                        <i style="font-size:36px" class="fa fa-google-plus" aria-hidden="true"></i>
+                        <i style="font-size:36px" class="fa fa-facebook-square" aria-hidden="true"></i>
+                        <i style="font-size:36px" class="fa fa-instagram" aria-hidden="true"></i>
+                        <i style="font-size:36px" class="fa fa-twitter" aria-hidden="true"></i>
+
+                    </div>
+
                 </div>
                 <div class="col">
-                    <h4>Atendimento</h4>
+                    <h6>Opções de Pagamento</h6>
+                    <img src="imagem/opcoes.png" alt=""/>
                 </div>
             </div>
-            <!--===================================================================================-->
+            <hr>
+            <div>
+                <p style="text-align: center; font-size: 10px">Copyright © 2000 - 2017 
+                    <a href="AppleStore.html">www.applestore.com.br</a> , TODOS OS DIREITOS RESERVADOS. 
+                    Todo o conteúdo do site, todas as fotos, imagens, logotipos, marcas, dizeres, som, 
+                    software, conjunto imagem, layout, trade dress, aqui veiculados são de propriedade 
+                    exclusiva da APPLESTORE.COM Internet S.A. É vedada qualquer reprodução, total ou parcial, 
+                    de qualquer elemento de identidade, sem expressa autorização. A violação de qualquer 
+                    direito mencionado implicará na responsabilização cível e criminal nos termos da Lei. 
+                    CNPJ: 00.000.000/0000-00 Rua Antôno Tequinha, ### - Jd. Oasis - CEP 00000-000 - Paranavaí - PR</p>
+            </div>
         </div>
         <hr>
+        <div style="background: #F2F2F2">
+            <div style="text-align: center">
+                <h4><i class="fa fa-apple" aria-hidden="true"></i>.com</h4> Palmeiras não tem Mundial!!!
+            </div>
+        </div>
     </body>
 </html>

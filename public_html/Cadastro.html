@@ -1,14 +1,164 @@
 <html>
     <head>
-        <title>Cadastro</title>
+        <title>Apple Store</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/jquery-3.2.1.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.js"></script>
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+        <style>
+            .card{
+                margin-right: 2px;
+                margin-bottom: 2px;
+                width: 18rem;
+                float: left;
+            }
+            .card-img{
+                text-align: center;                
+            }
+            .card-body{
+                text-align: left;                               
+            }
+            .card-img-top{
+                width: 150px;
+            }
+            .btn-card{
+                text-align: center;
+            }
+            .form{
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                border-bottom: 1px solid #4682B4;
+                width: 400px;
+            }
+            .btnn {
+                border: 0px;
+                width: 400px;
+                height: 30px;
+                background:#4682B4;
+                color: #FFFFFF;
+                border-radius: 4px;
+            }
+        </style>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="container">
+            <!--===================================================================================-->
+            <div class="row">               
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg navbar-light" style=" background-color: #444444;">
+                        <a class="navbar-brand" href="AppleStore.html" style="color: whitesmoke">
+                            <i style="color: #F2F2F2" class="fa fa-apple" aria-hidden="true"></i> Home</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: whitesmoke">
+                                        <i class="fa fa-bars" aria-hidden="true"></i> Manuais</a>                                   
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">iPhone</a>
+                                        <a class="dropdown-item" href="#">Macbook</a>
+                                        <a class="dropdown-item" href="#">iMac</a>
+                                        <a class="dropdown-item" href="#">Apple Watch</a>
+                                        <a class="dropdown-item" href="#">Apple TV</a>
+                                        <a class="dropdown-item" href="#">Mac Pro</a>
+                                        <a class="dropdown-item" href="#">Apple AirPort</a>
+                                        <a class="dropdown-item" href="#">Acessórios</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: whitesmoke">
+                                        <i class="fa fa-bars" aria-hidden="true"></i> Especificações Técnicas</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">iPhone</a>
+                                        <a class="dropdown-item" href="#">Macbook</a>
+                                        <a class="dropdown-item" href="#">iMac</a>
+                                        <a class="dropdown-item" href="#">Apple Watch</a>
+                                        <a class="dropdown-item" href="#">Apple TV</a>
+                                        <a class="dropdown-item" href="#">Mac Pro</a>
+                                        <a class="dropdown-item" href="#">Apple AirPort</a>
+                                        <a class="dropdown-item" href="#">Acessórios</a> 
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="#" style="color: whitesmoke">Suporte</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="Cadastro.html" style="color: whitesmoke"> 
+                                        <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="CarrinhoDeCompras.html" style="color: whitesmoke"> 
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i> Carrinho</a>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: whitesmoke">
+                                    <i class="fa fa-search" aria-hidden="true"></i> Pesquisar</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <hr>
+            <!--===================================================================================-->
+            <div class="row" style="background: #F2F2F2">
+                <div class="col-2">
+                    <h4>Categorias</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#" style="color: darkslategray">iPhone</a></li>
+                        <li class="list-group-item"><a href="#" style="color: darkslategray">Macbook</a></li>                       
+                        <li class="list-group-item"><a href="#" style="color: darkslategray">iMac</a></li>                        
+                        <li class="list-group-item"><a href="#" style="color: darkslategray">Apple Watch</a></li>                         
+                        <li class="list-group-item"><a href="#" style="color: darkslategray">Apple TV</a></li>                         
+                        <li class="list-group-item"><a href="#" style="color: darkslategray">Mac Pro</a></li>                         
+                        <li class="list-group-item"><a href="#" style="color: darkslategray">Apple AirPort</a></li>                         
+                        <li class="list-group-item"><a href="#" style="color: darkslategray">Acessórios</a></li>                        
+                    </ul>
+                </div>
+                <div class="col-10">
+                    <div>
+                        <form style="text-align: center; border: none" action="" method="GET"></br>
+                            <span class="fa fa-user" aria-hidden="true"></span>
+                            <input class="form" name="email" type="email" placeholder="Email ou CPF/CNPJ"/><br/></br>
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <input class="form" name="senha" type="password" placeholder="Senha"/><br/><br/>
+                            <input class="btnn" style="background: #4682B4" value="Entrar" type="submit"/></br>
+                            <p style="color: #4682B4; size: 10px">Esqueci minha senha</p>
+                            <hr style="width: 400px">
+                            <input class="btnn" style="background: #365899" value=" Entrar com o FaceBook" type="submit"/></br>
+                            <hr style="width: 400px">
+                            <input class="btnn" style="background: #66D753" value=" Cadastre-se" type="submit"/></br>
+
+                        </form>
+                    </div>                   
+                </div>
+            </div>
+            <hr>
+
+            <div>
+                <p style="text-align: center; font-size: 10px">Copyright © 2000 - 2017 
+                    <a href="AppleStore.html">www.applestore.com.br</a> , TODOS OS DIREITOS RESERVADOS. 
+                    Todo o conteúdo do site, todas as fotos, imagens, logotipos, marcas, dizeres, som, 
+                    software, conjunto imagem, layout, trade dress, aqui veiculados são de propriedade 
+                    exclusiva da APPLESTORE.COM Internet S.A. É vedada qualquer reprodução, total ou parcial, 
+                    de qualquer elemento de identidade, sem expressa autorização. A violação de qualquer 
+                    direito mencionado implicará na responsabilização cível e criminal nos termos da Lei. 
+                    CNPJ: 00.000.000/0000-00 Rua Antôno Tequinha, ### - Jd. Oasis - CEP 00000-000 - Paranavaí - PR</p>
+            </div>
+        </div>
+        <hr>
+        <div style="background: #F2F2F2">
+            <div style="text-align: center">
+                <h4><i class="fa fa-apple" aria-hidden="true"></i>.com</h4> Palmeiras não tem Mundial!!!
+            </div>
+        </div>
     </body>
 </html>
